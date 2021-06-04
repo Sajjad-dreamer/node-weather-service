@@ -10,7 +10,7 @@ request({url, json: true} , (error, {body}) => {
        }else if (body.error){
         callback(body.error, undefined)
        }else{
-               callback(undefined, "The weather is " + body.current.weather_descriptions[0] + "and temperature is" + body.current.temperature + "with a humidity" + body.current.humidity +"%")
+               callback(undefined, 'The weather is ' + body.current.weather_descriptions[0] + ' and temperature is ' + body.current.temperature + ' with a humidity ' + body.current.humidity + '%')
         }
 })
 
